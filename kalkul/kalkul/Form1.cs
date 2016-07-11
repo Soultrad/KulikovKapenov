@@ -15,45 +15,29 @@ namespace kalkul
         {
             InitializeComponent();
         }
-
-      
-
-        private void plus_Click_1(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
             double value1 = Convert.ToDouble(textBox1.Text);
             double value2 = Convert.ToDouble(textBox2.Text);
+            double result;
+            switch (((Button)sender).Name)
+            {
+                case "plus":
+                    result = value1 + value2;
+                    break;
+                case "minus":
+                    result = value1 - value2;
+                    break;
+                case "ymno":
+                    result = value1 * value2;
+                    break;
+                case "delenie":
+                    result = value1 / value2;
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция");
+            }
 
-            double result = value1 + value2;
-
-            textBox3.Text = Convert.ToString(result);
-        }
-
-        private void minus_Click(object sender, EventArgs e)
-        {
-            double value1 = Convert.ToDouble(textBox1.Text);
-            double value2 = Convert.ToDouble(textBox2.Text);
-
-            double result = value1 - value2;
-
-            textBox3.Text = Convert.ToString(result);
-        }
-
-        private void delenie_Click(object sender, EventArgs e)
-        {
-            double value1 = Convert.ToDouble(textBox1.Text);
-            double value2 = Convert.ToDouble(textBox2.Text);
-
-            double result = value1 / value2;
-
-            textBox3.Text = Convert.ToString(result);
-        }
-
-        private void ymno_Click(object sender, EventArgs e)
-        {
-            double value1 = Convert.ToDouble(textBox1.Text);
-            double value2 = Convert.ToDouble(textBox2.Text);
-
-            double result = value1 * value2;
 
             textBox3.Text = Convert.ToString(result);
         }

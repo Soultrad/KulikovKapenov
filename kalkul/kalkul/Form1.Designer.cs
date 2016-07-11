@@ -52,7 +52,7 @@
             this.plus.TabIndex = 1;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
-            this.plus.Click += new System.EventHandler(this.plus_Click_1);
+            this.plus.Click += new System.EventHandler(this.button_Click);
             // 
             // textBox2
             // 
@@ -76,7 +76,7 @@
             this.minus.TabIndex = 4;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.minus_Click);
+            this.minus.Click += new System.EventHandler(this.button_Click);
             // 
             // delenie
             // 
@@ -86,7 +86,7 @@
             this.delenie.TabIndex = 5;
             this.delenie.Text = "/";
             this.delenie.UseVisualStyleBackColor = true;
-            this.delenie.Click += new System.EventHandler(this.delenie_Click);
+            this.delenie.Click += new System.EventHandler(this.button_Click);
             // 
             // ymno
             // 
@@ -96,7 +96,7 @@
             this.ymno.TabIndex = 6;
             this.ymno.Text = "*";
             this.ymno.UseVisualStyleBackColor = true;
-            this.ymno.Click += new System.EventHandler(this.ymno_Click);
+            this.ymno.Click += new System.EventHandler(this.button_Click);
             // 
             // Form1
             // 
