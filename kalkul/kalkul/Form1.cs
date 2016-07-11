@@ -19,7 +19,8 @@ namespace kalkul
         {
             double value1 = Convert.ToDouble(textBox1.Text);
             double value2 = Convert.ToDouble(textBox2.Text);
-            double result;
+            ITwoArgCalculator calculator = TwoArgumentFactory.CreateCalculator(((Button) sender).Name);
+            double result=calculator.Calculate(value1,value2);
             switch (((Button)sender).Name)
             {
                 case "plus":
