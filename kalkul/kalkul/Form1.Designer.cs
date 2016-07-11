@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.plus = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
+            this.delenie = new System.Windows.Forms.Button();
+            this.ymno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -44,14 +44,15 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // button1
+            // plus
             // 
-            this.button1.Location = new System.Drawing.Point(12, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.plus.Location = new System.Drawing.Point(12, 64);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(75, 23);
+            this.plus.TabIndex = 1;
+            this.plus.Text = "+";
+            this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.plus_Click_1);
             // 
             // textBox2
             // 
@@ -67,44 +68,47 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 3;
             // 
-            // button2
+            // minus
             // 
-            this.button2.Location = new System.Drawing.Point(93, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.minus.Location = new System.Drawing.Point(93, 64);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(75, 23);
+            this.minus.TabIndex = 4;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
-            // button3
+            // delenie
             // 
-            this.button3.Location = new System.Drawing.Point(12, 93);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.delenie.Location = new System.Drawing.Point(12, 93);
+            this.delenie.Name = "delenie";
+            this.delenie.Size = new System.Drawing.Size(75, 23);
+            this.delenie.TabIndex = 5;
+            this.delenie.Text = "/";
+            this.delenie.UseVisualStyleBackColor = true;
+            this.delenie.Click += new System.EventHandler(this.delenie_Click);
             // 
-            // button4
+            // ymno
             // 
-            this.button4.Location = new System.Drawing.Point(93, 93);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ymno.Location = new System.Drawing.Point(93, 93);
+            this.ymno.Name = "ymno";
+            this.ymno.Size = new System.Drawing.Size(75, 23);
+            this.ymno.TabIndex = 6;
+            this.ymno.Text = "*";
+            this.ymno.UseVisualStyleBackColor = true;
+            this.ymno.Click += new System.EventHandler(this.ymno_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ymno);
+            this.Controls.Add(this.delenie);
+            this.Controls.Add(this.minus);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.plus);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -116,12 +120,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button plus;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button minus;
+        private System.Windows.Forms.Button delenie;
+        private System.Windows.Forms.Button ymno;
     }
 }
 

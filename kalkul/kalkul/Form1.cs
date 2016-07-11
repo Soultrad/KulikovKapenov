@@ -15,5 +15,47 @@ namespace kalkul
         {
             InitializeComponent();
         }
+
+      
+
+        private void plus_Click_1(object sender, EventArgs e)
+        {
+            double value1 = Convert.ToDouble(textBox1.Text);
+            double value2 = Convert.ToDouble(textBox2.Text);
+
+            double result = value1 + value2;
+
+            textBox3.Text = Convert.ToString(result);
+        }
+
+        private void minus_Click(object sender, EventArgs e)
+        {
+            double value1 = Convert.ToDouble(textBox1.Text);
+            double value2 = Convert.ToDouble(textBox2.Text);
+
+            double result = value1 - value2;
+
+            textBox3.Text = Convert.ToString(result);
+        }
+
+        private void delenie_Click(object sender, EventArgs e)
+        {
+            double value1 = Convert.ToDouble(textBox1.Text);
+            double value2 = Convert.ToDouble(textBox2.Text);
+
+            double result = value1 / value2;
+
+            textBox3.Text = Convert.ToString(result);
+        }
+
+        private void ymno_Click(object sender, EventArgs e)
+        {
+            double value1 = Convert.ToDouble(textBox1.Text);
+            double value2 = Convert.ToDouble(textBox2.Text);
+
+            double result = value1 * value2;
+
+            textBox3.Text = Convert.ToString(result);
+        }
     }
 }
