@@ -1,4 +1,4 @@
-﻿namespace kalkul
+﻿namespace kalkul.OneArgumentFunction
 {
     public interface IOneArgCalculator
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace kalkul
+namespace kalkul.OneArgumentFunction
 {
     public class Sin:IOneArgCalculator
     {

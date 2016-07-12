@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace kalkul
+namespace kalkul.TwoArgumentFunction
 {
     public static class TwoArgumentFactory
     {

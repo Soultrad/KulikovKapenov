@@ -1,4 +1,4 @@
-﻿namespace kalkul
+﻿namespace kalkul.TwoArgumentFunction
 {
     public class Minus:ITwoArgCalculator
     {
