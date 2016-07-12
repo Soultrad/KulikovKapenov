@@ -6,12 +6,14 @@ namespace kalkul.Tests.TwoArgumentFunctions
     [TestFixture]
     public class PlusTests
     {
-        [Test]
-        public void PlusTest()
+        [TestCase(6,2,8)]
+        [TestCase(10, 2, 12)]
+        public void PlusTest(double first,double second,double expected)
         {
             ITwoArgCalculator calculator=new Plus();
-            double result = calculator.Calculate(3, 5);
-            Assert.AreEqual(8,result);
+            double result = calculator.Calculate(first,second);
+            Assert.AreEqual(expected,result);
         }
+
     }
 }

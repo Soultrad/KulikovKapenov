@@ -42,7 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentFunctions\CosTests.cs" />
+    <Compile Include="OneArgumentFunctions\ArcSinTests.cs" />
+    <Compile Include="OneArgumentFunctions\CtgTests.cs" />
+    <Compile Include="OneArgumentFunctions\ExpTests.cs" />
+    <Compile Include="OneArgumentFunctions\LnTests.cs" />
+    <Compile Include="OneArgumentFunctions\LogTenTests.cs" />
+    <Compile Include="OneArgumentFunctions\SqrTripleTests.cs" />
+    <Compile Include="OneArgumentFunctions\SqrtTests.cs" />
+    <Compile Include="OneArgumentFunctions\SqrtTripleTests.cs" />
+    <Compile Include="OneArgumentFunctions\TgTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OneArgumentFunctions\ArcCosTests.cs" />
+    <Compile Include="OneArgumentFunctions\SinTests.cs" />
+    <Compile Include="OneArgumentFunctions\SqrTests.cs" />
     <Compile Include="TwoArgumentFunctions\DivideTests.cs" />
     <Compile Include="TwoArgumentFunctions\MinusTests.cs" />
     <Compile Include="TwoArgumentFunctions\MultiplicationTests.cs" />
@@ -57,9 +70,7 @@
       <Name>kalkul</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OneArgumentFunctions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

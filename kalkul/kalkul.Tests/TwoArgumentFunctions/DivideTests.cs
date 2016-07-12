@@ -7,12 +7,13 @@ namespace kalkul.Tests.TwoArgumentFunctions
     [TestFixture]
     public class DivideTests
     {
-        [Test]
-        public void DivideTest()
+        [TestCase(15,3,5)]
+        [TestCase(30,10,3)]
+        public void DivideTest(double first, double second, double expected)
         {
             ITwoArgCalculator calculator = new Divide();
-            double result = calculator.Calculate(15, 3);
-            Assert.AreEqual(5, result);
+            double result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
         }
     }
 }
