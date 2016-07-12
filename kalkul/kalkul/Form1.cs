@@ -17,29 +17,18 @@ namespace kalkul
         }
         private void button_Click(object sender, EventArgs e)
         {
-            double value1 = Convert.ToDouble(textBox1.Text);
-            double value2 = Convert.ToDouble(textBox2.Text);
-            ITwoArgCalculator calculator = TwoArgumentFactory.CreateCalculator(((Button) sender).Name);
-            double result=calculator.Calculate(value1,value2);
-            switch (((Button)sender).Name)
-            {
-                case "plus":
-                    result = value1 + value2;
-                    break;
-                case "minus":
-                    result = value1 - value2;
-                    break;
-                case "ymno":
-                    result = value1 * value2;
-                    break;
-                case "delenie":
-                    result = value1 / value2;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+            double firstValue = Convert.ToDouble(textBox1.Text);
+            double secondValue = Convert.ToDouble(textBox2.Text);
+            ITwoArgCalculator calculator = TwoArgumentFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstValue, secondValue);
+            textBox3.Text = Convert.ToString(result);
+        }
 
-
+        private void sin_Click(object sender, EventArgs e)
+        {
+            double firstValue = Convert.ToDouble(textBox1.Text);
+            IOneArgCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstValue);
             textBox3.Text = Convert.ToString(result);
         }
     }

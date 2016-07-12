@@ -13,9 +13,9 @@ namespace kalkul
                 case "minus":
                  return new Minus();
                 case "ymno":
-                    return new Ymno();
+                    return new Multiplication();
                 case "delenie":
-                    return new Delenie();
+                    return new Divide();
                    
                 default:
                     throw new Exception("Неизвестная операция");

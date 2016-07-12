@@ -35,6 +35,8 @@
             this.minus = new System.Windows.Forms.Button();
             this.delenie = new System.Windows.Forms.Button();
             this.ymno = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
+            this.sin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -98,11 +100,33 @@
             this.ymno.UseVisualStyleBackColor = true;
             this.ymno.Click += new System.EventHandler(this.button_Click);
             // 
+            // cos
+            // 
+            this.cos.Location = new System.Drawing.Point(12, 160);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(75, 23);
+            this.cos.TabIndex = 7;
+            this.cos.Text = "cos";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.sin_Click);
+            // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(93, 160);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(75, 23);
+            this.sin.TabIndex = 8;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.sin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.sin);
+            this.Controls.Add(this.cos);
             this.Controls.Add(this.ymno);
             this.Controls.Add(this.delenie);
             this.Controls.Add(this.minus);
@@ -126,6 +150,8 @@
         private System.Windows.Forms.Button minus;
         private System.Windows.Forms.Button delenie;
         private System.Windows.Forms.Button ymno;
+        private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button sin;
     }
 }
 
