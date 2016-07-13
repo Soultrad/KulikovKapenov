@@ -43,10 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="OneArgumentFunction\ArcCos.cs" />
     <Compile Include="OneArgumentFunction\ArcSin.cs" />
     <Compile Include="OneArgumentFunction\Cos.cs" />
     <Compile Include="OneArgumentFunction\Ctg.cs" />
+    <Compile Include="Sorting\InsertSort.cs" />
+    <Compile Include="Sorting\ISort.cs" />
+    <Compile Include="Sorting\SelectSort.cs" />
+    <Compile Include="Sorting\SortFactory.cs" />
     <Compile Include="TwoArgumentFunction\Divide.cs" />
     <Compile Include="OneArgumentFunction\Exp.cs" />
     <Compile Include="Form1.cs">
@@ -74,6 +84,9 @@
     <Compile Include="TwoArgumentFunction\Multiplication.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
