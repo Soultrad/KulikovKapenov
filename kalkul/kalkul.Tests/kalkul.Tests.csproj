@@ -46,6 +46,7 @@
     <Compile Include="OneArgumentFunctions\ArcSinTests.cs" />
     <Compile Include="OneArgumentFunctions\CtgTests.cs" />
     <Compile Include="OneArgumentFunctions\ExpTests.cs" />
+    <Compile Include="OneArgumentFunctions\OneArgumentFactotyTests.cs" />
     <Compile Include="OneArgumentFunctions\LnTests.cs" />
     <Compile Include="OneArgumentFunctions\LogTenTests.cs" />
     <Compile Include="OneArgumentFunctions\SqrTripleTests.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="TwoArgumentFunctions\MinusTests.cs" />
     <Compile Include="TwoArgumentFunctions\MultiplicationTests.cs" />
     <Compile Include="TwoArgumentFunctions\PlusTests.cs" />
+    <Compile Include="TwoArgumentFunctions\TwoArgumentFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

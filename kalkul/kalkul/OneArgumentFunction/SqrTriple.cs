@@ -6,6 +6,7 @@ namespace kalkul.OneArgumentFunction
     {
         public double Calculate(double first)
         {
+          
             return Math.Pow(first, 3);
         }
     }

@@ -4,13 +4,18 @@ namespace kalkul.OneArgumentFunction
 {
     public static class OneArgumentFactory
     {
+        /// <summary>
+        /// Factory for one argument fuctions.
+        /// </summary>
+        /// <param name="calculatorName"></param>
+        /// <returns></returns>
         public static IOneArgCalculator CreateCalculator(string calculatorName)
         {
             switch (calculatorName)
             {
-                case "sin":
+                case "Sin":
                     return new Sin();
-                case "cos":
+                case "Cos":
                     return new Cos();
                 case "Tg":
                     return new Tg();

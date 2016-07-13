@@ -1,4 +1,5 @@
-﻿using kalkul.OneArgumentFunction;
+﻿using System;
+using kalkul.OneArgumentFunction;
 using NUnit.Framework;
 
 namespace kalkul.Tests.OneArgumentFunctions
@@ -13,6 +14,13 @@ namespace kalkul.Tests.OneArgumentFunctions
             IOneArgCalculator calculator = new Ln();
             double result = calculator.Calculate(first);
             Assert.AreEqual(expected, result, 0.0000001);
+        }
+        [Test]
+        public void DividebyZeroTest()
+        {
+            IOneArgCalculator calculator = new Sqrt();
+            Assert.Throws<Exception>(() => calculator.Calculate(-3));
+
         }
     }
 }

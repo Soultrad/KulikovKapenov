@@ -1,4 +1,5 @@
-﻿using kalkul.TwoArgumentFunction;
+﻿using System;
+using kalkul.TwoArgumentFunction;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 
@@ -14,6 +15,13 @@ namespace kalkul.Tests.TwoArgumentFunctions
             ITwoArgCalculator calculator = new Divide();
             double result = calculator.Calculate(first, second);
             Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void DividebyZeroTest()
+        {
+            ITwoArgCalculator calculator = new Divide();
+            Assert.Throws<Exception>(() => calculator.Calculate(10, 0));
+
         }
     }
 }

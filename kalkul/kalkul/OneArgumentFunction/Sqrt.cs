@@ -6,6 +6,10 @@ namespace kalkul.OneArgumentFunction
     {
         public double Calculate(double first)
         {
+            if (first < 0)
+            {
+                throw new Exception("Отрицательное число в корне");
+            }
             return Math.Sqrt(first);
         }
     }
